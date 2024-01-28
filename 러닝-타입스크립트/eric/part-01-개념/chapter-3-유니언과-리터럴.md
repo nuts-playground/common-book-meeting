@@ -15,7 +15,7 @@
 - 값이 정의, 선언, 이전에 유추한 것보다 더 구체적인 타입임을 코드에서 유추하는 것
 - 타입 가드를 통해 특정 코드 블록 내에서 변수의 타입 범위를 좁히는 과정
 - '타입을 좁힌다' 가 핵심
-- 1. 값 할당을 통한 내로잉&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;&nbsp; 값을 할당하면서 타입을 추려 간다.
+  1. 값 할당을 통한 내로잉&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;&nbsp; 값을 할당하면서 타입을 추려 간다.
   2. 조건 검사를 통한 내로잉&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;&nbsp; if 등 조건부 로직을 활용해 타입을 추려 간다.
   3. typeof 검사를 통한 내로잉&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;  조건 검사에 typeof 를 활용해 타입을 추려 간다.
 
