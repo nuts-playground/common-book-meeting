@@ -357,7 +357,7 @@ type ShortPoem = Haiku | Villanelle;
 
 #### `never` 타입
 
-원시 타입의 값은 동시에 여러 타입이 될 수 없기 때문에 교차 타입의 구성 요소와 함께 결합할 수 없음.
+원시 타입의 값은 동시에 여러 타입이 될 수 없기 때문에 교차 타입의 구성 요소와 함께 결합할 수 없음
 
 ```typescript
 type NotPossible = number & string; // type: never
