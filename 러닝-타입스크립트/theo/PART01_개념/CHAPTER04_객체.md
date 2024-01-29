@@ -10,8 +10,8 @@
 
 ```javascript
 let person: {
-    name: string,
-    age: number,
+    name: string;
+    age: number;
 };
 
 person = {
@@ -28,9 +28,9 @@ person = {
 
 ```javascript
 let person: {
-    name: string,
-    age: number,
-    location: string,
+    name: string;
+    age: number;
+    location: string;
 };
 
 person = {
@@ -43,9 +43,9 @@ person = {
 
 ```javascript
 type Person = {
-    name: string,
-    age: number,
-    location: string,
+    name: string;
+    age: number;
+    location: string;
 };
 
 let person: Person;
@@ -66,8 +66,8 @@ person = {
 
 ```javascript
 type Person = {
-    name: string,
-    age: number,
+    name: string;
+    age: number;
 };
 
 const person: Person = {
@@ -87,8 +87,8 @@ const notPerson: Person = {
 
 ```javascript
 type Person = {
-    name: string,
-    age: number,
+    name: string;
+    age: number;
 };
 
 const person: Person = {
@@ -105,8 +105,8 @@ const person: Person = {
 
 ```javascript
 type Person = {
-    name: string,
-    age: number,
+    name: string;
+    age: number;
 };
 
 const person = {
@@ -127,10 +127,10 @@ const newPerson: Person = person;
 ```javascript
 type Person = {
     name: {
-        firstName: string,
-        lastName: string,
-    },
-    age: 27,
+        firstName: string;
+        lastName: string;
+    };
+    age: 27;
 };
 ```
 
@@ -138,12 +138,12 @@ type Person = {
 
 ```javascript
 type Name = {
-    firstName: string,
-    lastName: string,
+    firstName: string;
+    lastName: string;
 };
 type Person = {
-    name: Name,
-    age: 27,
+    name: Name;
+    age: 27;
 };
 ```
 
@@ -153,9 +153,9 @@ type Person = {
 
 ```javascript
 type Person = {
-    name: string,
-    age: number,
-    job?: string,
+    name: string;
+    age: number;
+    job?: string;
 };
 
 const person: Person = {
@@ -196,13 +196,13 @@ const person =
 ```javascript
 // 명시된 객체 타입 유니언
 type PersonWithAge = {
-    name: string,
-    age: number,
+    name: string;
+    age: number;
 };
 
 type PersonWithJob = {
-    name: string,
-    job: string,
+    name: string;
+    job: string;
 };
 
 type Person = PersonWithAge | PersonWithJob;
@@ -236,15 +236,15 @@ if ("job" in person) {
 
 ```javascript
 type Employee = {
-    name: string,
-    job: string,
-    type: "employee",
+    name: string;
+    job: string;
+    type: "employee";
 };
 
 type Student = {
-    name: string,
-    age: number,
-    type: "student",
+    name: string;
+    age: number;
+    type: "student";
 };
 
 type Person = Employee | Student;
@@ -269,13 +269,13 @@ if (person.type === "employee") {
 
 ```javascript
 type Student = {
-    name: string,
-    age: number,
+    name: string;
+    age: number;
 };
 
 type Employee = {
-    name: string,
-    job: string,
+    name: string;
+    job: string;
 };
 
 type StudentWorker = Student & Employee;
