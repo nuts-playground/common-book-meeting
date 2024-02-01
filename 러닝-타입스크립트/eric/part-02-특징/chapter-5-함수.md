@@ -37,6 +37,7 @@
 - never 타입은 점유할 수 없는 또는 바닥 타입이라고 불린다.
 - 타입에는 **`불가능`**을 나타내는 타입도 필요하다.
 - 숫자는 0이 있고 문자에는 never 가 있다.
+- 함수를 사용하면 불가능한 위치에 추가적인 코드를 사용하게끔 해 준다. => 더 나은 에러 메시지를 보여주거나 파일 또는 반복문과 같은 자원을 닫는 데 유용하다.
 - /* 호세, 테오와 리뷰 후 추가 한 내용 */
 
 ### 오버로드 (시그니처)
@@ -121,8 +122,30 @@ function fail(msg: string): never {
 /* 리뷰 후 추가한 내용 */
 /*
 * never 타입의 쓰임새
-* 여기 추가해야함 TODO
+* 허용할 수 없는 함수 파라미터에 제한을 한다 => 이거 진짜 중요한 것 같다.
+* 추가 내용은 개발 하면서 추가하자
 * */
+function teamErrorFormatNever(input: never): never {
+    let obj = {
+        path: ss,
+        timestamp: 21312
+    }
+    throw new Error('우리팀의 로그 내용');
+}
+
+type UserLevel = 'normal' | 'maneger' 
+
+function action(ipnut: UserLevel): number {
+    try {
+        switch (input) {
+            case 'normal': { return 1; }
+            case 'maneger': { return 2; }
+            default: { throw new Error('없음')}
+        }
+    } catch () {
+        teamErrorFormatNever() // 에러 메시지 넣어서 보낸다? => 불가 이미 정해져 있는 포맷이 있기 때문에
+    }
+}
 
 ```
 
