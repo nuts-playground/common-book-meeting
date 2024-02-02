@@ -75,3 +75,9 @@
 // function foo(bar: string, baz?: number) {
 //   return baz ? baz : bar;
 // }
+
+
+// interface MoreNarrowStrings {
+//     [i: number]: string | undefined; // Error: 'number' index type 'string | undefined' is not assignable to string index type 'string | undefined'.
+//     [i: string]: string;
+// }
