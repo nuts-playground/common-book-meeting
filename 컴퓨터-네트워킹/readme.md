@@ -1,4 +1,4 @@
-<img src="./img/main-img.png">
+<img src="iron/img/main-img.png">
 
 # 컴퓨터 네트워킹 - 하향식 접근
 
