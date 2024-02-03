@@ -1,4 +1,4 @@
-<img src="./img/main-img.png">
+<img src="iron/img/main-img.png">
 
 # 운영체제
 
