@@ -493,3 +493,26 @@
 > 디스크 드라이브가 좋은 예이다.<br>
 > 디스크 블록이라는 수천 개의 독립된 단위로 나누어지는데, 디스크 블록의 가용 여부를 나타내기 위해 비트맵을 사용할 수 있다.<br>
 
+## 1.10 컴퓨팅 환경
+
+> 다양한 컴퓨팅 환경에서 운영체제가 어떻게 사용되는지 설명하는 챕터이다.
+> 다음과 같이 여러 환경에서 이루어지고 있다.
+
+- Traditional Computing
+- Mobile Computing
+- Client-Server Computing
+- Peer-to Peer Computing
+- Cloud Computing
+- Real-Time Embedded Systems
+
+## 1.11 무료 및 공개 소스 운영체제
+
+> 개론적인 내용으로 가볍게 읽고 넘어갑니다.
+
+### 1.11.1 역사
+### 1.11.2 무료 운영체제
+### 1.11.3 GNU/Linux
+### 1.11.4 BSD Unix
+### 1.11.5 Solaris
+### 1.11.6 학습 도구로서 공개 소스 시스템
+
